@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startPageFragment">
+    <fragment
+        android:id="@+id/startPageFragment"
+        android:name="com.example.tenandlesmetro.StartPageFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_start_page" >
+        <action
+            android:id="@+id/action_startPageFragment_to_newPersonFragment"
+            app:destination="@id/newPersonFragment" />
+        <action
+            android:id="@+id/action_startPageFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPersonFragment"
+        android:name="com.example.tenandlesmetro.NewPersonFragment"
+        android:label="@string/newBloodStr"
+        tools:layout="@layout/fragment_new_person" >
+        <action
+            android:id="@+id/action_newPersonFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.tenandlesmetro.GameFragment"
+        android:label="@string/weAliveStr"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_inventory"
+            app:destination="@id/inventory"
+            app:popUpTo="@id/gameFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_historyFragment"
+            app:destination="@id/historyFragment"
+            app:popUpTo="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.tenandlesmetro.HistoryFragment"
+        android:label="@string/historyStr"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inventory"
+        android:name="com.example.tenandlesmetro.Inventory"
+        android:label="@string/inventoryStr"
+        tools:layout="@layout/fragment_inventory">
+        <action
+            android:id="@+id/action_inventory_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/gameFragment" />
+    </fragment>
+</navigation>

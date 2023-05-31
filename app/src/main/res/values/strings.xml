@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">10 СВЕЧЕЙ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nameText">Имя персонажа</string>
+    <string name="shortInfoText">Краткая предыстория</string>
+    <string name="goodText">Хорошая черта</string>
+    <string name="jsonFileName">person.json</string>
+    <string name="history">КонстрейнтЛэйаут (ConstraintLayout) - это гибкий и мощный макет в Android, который позволяет точно задавать положение и взаимосвязи между компонентами в пользовательском интерфейсе. Он основан на идеях ограничений (constraints) между различными элементами интерфейса.
+
+Вот некоторые ключевые концепции, связанные с ConstraintLayout:
+
+Ограничения (Constraints): Ограничения определяют положение компонента относительно других компонентов или границ экрана. Ограничения могут определяться для каждой из сторон компонента (верхней, нижней, левой, правой) и могут быть выражены в виде отступов от других компонентов или границ экрана. Например, вы можете установить ограничение, чтобы компонент всегда находился внизу экрана или располагался между другими компонентами.
+
+Горизонтальные и вертикальные цепочки (Chains): Цепочки используются для связи нескольких компонентов вместе, чтобы они автоматически растягивались или сжимались в зависимости от изменения размеров экрана или содержимого. Цепочки могут быть горизонтальными или вертикальными и позволяют легко создавать адаптивные макеты.
+
+Guidelines (Направляющие): Направляющие - это визуальные направляющие линии, которые помогают разместить компоненты с определенным выравниванием или отступами от границ экрана или других компонентов. Направляющие могут быть абсолютными (например, выровнены по определенному значению пикселей) или относительными (например, выровнены по проценту ширины или высоты экрана).
+
+Специальные атрибуты размещения: ConstraintLayout предлагает множество специальных атрибутов размещения, таких как layout_constraintStart_toEndOf, layout_constraintTop_toBottomOf и т. д., которые позволяют создавать ограничения между компонентами.
+
+Оптимизация: ConstraintLayout имеет встроенные механизмы оптимизации, которые позволяют улучшить производительность при работе с большим количеством компонентов в макете.</string>
+    <string name="inventoryStr">Инвентарь</string>
+    <string name="historyStr">История</string>
+    <string name="newBloodStr">Свежая кровь</string>
+    <string name="weAliveStr">Мы всё еще живы</string>
+    <string name="badStr">Плохая черта</string>
+    <string name="goodStr">Хорошая черта</string>
+    <string name="secretStr">Секрет</string>
+    <string name="personHistoryStr">История персонажа</string>
+    <string name="saveStr">Сохранить</string>
+    <string name="ageStr">Возраст</string>
+    <string name="preHistoryPersStr">Предыстория персонажа</string>
+    <string name="letSPlay">Начнем игру</string>
+    <string name="darkestSecretStr">Тёмный секретик</string>
+    <string name="createPerson">Создать персонажа ???</string>
+    <string name="continueGame">Продолжим игру?</string>
+    <string name="starterHistoryStr">Как я сюда попал?</string>
+    <string name="cahngeInventoryStr">Изменить инвентарь</string>
+</resources>
