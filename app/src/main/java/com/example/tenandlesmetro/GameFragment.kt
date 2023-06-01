@@ -1,12 +1,16 @@
 package com.example.tenandlesmetro
 
 import android.os.Bundle
-import android.view.*
-import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
 import com.example.tenandlesmetro.data.Person
 import com.example.tenandlesmetro.data.Sex
 import com.example.tenandlesmetro.databinding.FragmentGameBinding
@@ -36,7 +40,6 @@ class GameFragment : Fragment() {
         badText.text = person.badPersonTrait
         goodText.text = person.goodPersonTrait
         secretText.text = person.secret
-        historyMini.text = person.description
         inventoryMini.text = person.inventory.itemsToText()
         ageTextGame.text = person.age
         sexImg.setImageResource(
@@ -56,6 +59,7 @@ class GameFragment : Fragment() {
         when(item.itemId) {
             R.id.inventory -> findNavController().navigate(R.id.action_gameFragment_to_inventory)
             R.id.historyFragment -> findNavController().navigate(R.id.action_gameFragment_to_historyFragment)
+            R.id.person_history -> findNavController().navigate(R.id.action_gameFragment_to_person_history)
         }
         return super.onOptionsItemSelected(item)
     }

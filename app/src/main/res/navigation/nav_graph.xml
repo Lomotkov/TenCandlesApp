@@ -39,17 +39,16 @@
             android:id="@+id/action_gameFragment_to_historyFragment"
             app:destination="@id/historyFragment"
             app:popUpTo="@id/gameFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_person_history"
+            app:destination="@id/person_history"
+            app:popUpTo="@id/gameFragment" />
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.example.tenandlesmetro.HistoryFragment"
         android:label="@string/historyStr"
-        tools:layout="@layout/fragment_history" >
-        <action
-            android:id="@+id/action_historyFragment_to_gameFragment"
-            app:destination="@id/gameFragment"
-            app:popUpTo="@id/gameFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/inventory"
         android:name="com.example.tenandlesmetro.Inventory"
@@ -60,4 +59,9 @@
             app:destination="@id/gameFragment"
             app:popUpTo="@id/gameFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/person_history"
+        android:name="com.example.tenandlesmetro.PersonHistoryFragment"
+        android:label="@string/personHistoryStr"
+        tools:layout="@layout/fragment_person_history" />
 </navigation>

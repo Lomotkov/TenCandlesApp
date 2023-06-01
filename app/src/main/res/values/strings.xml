@@ -35,5 +35,6 @@ Guidelines (Направляющие): Направляющие - это виз�
     <string name="createPerson">Создать персонажа ???</string>
     <string name="continueGame">Продолжим игру?</string>
     <string name="starterHistoryStr">Как я сюда попал?</string>
-    <string name="cahngeInventoryStr">Изменить инвентарь</string>
+    <string name="changeInventoryStr">Изменить инвентарь</string>
+    <string name="whoAmIStr">Кто я?</string>
 </resources>

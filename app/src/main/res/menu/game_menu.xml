@@ -6,7 +6,12 @@
         android:id="@+id/historyFragment"
         android:title="@string/starterHistoryStr" />
     <item
+        android:id="@+id/person_history"
+        android:icon="@android:drawable/btn_dropdown"
+        android:title="@string/whoAmIStr" />
+    <item
         android:id="@+id/inventory"
         android:icon="@android:drawable/btn_dropdown"
-        android:title="@string/cahngeInventoryStr" />
+        android:title="@string/changeInventoryStr" />
+
 </menu>
